@@ -12,12 +12,18 @@
 		6FDBEE5A1FB6994D00F6C38C /* js.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE581FB6994D00F6C38C /* js.storyboard */; };
 		6FDBEE5C1FB6994D00F6C38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE5B1FB6994D00F6C38C /* Assets.xcassets */; };
 		6FDBEE5F1FB6994D00F6C38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE5D1FB6994D00F6C38C /* LaunchScreen.storyboard */; };
-		6FDBEE671FB699A200F6C38C /* ys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE661FB699A200F6C38C /* ys.storyboard */; };
 		6FDBEE691FB69A0200F6C38C /* ha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE681FB69A0200F6C38C /* ha.storyboard */; };
 		6FDBEE6B1FB69A3000F6C38C /* jungsoo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE6A1FB69A3000F6C38C /* jungsoo.storyboard */; };
+		6FE15DBD1FB69C3F0064FCCB /* ys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE15DBC1FB69C3F0064FCCB /* ys.storyboard */; };
+		6FE15DBF1FB6A0DA0064FCCB /* VoteResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE15DBE1FB6A0DA0064FCCB /* VoteResultController.swift */; };
+		6FE15DC11FB6A1390064FCCB /* MakeVoteViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE15DC01FB6A1390064FCCB /* MakeVoteViewContoller.swift */; };
+		6FE15DC31FB6A2000064FCCB /* VoteListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE15DC21FB6A2000064FCCB /* VoteListController.swift */; };
+		D86826B64EEBB40020A828D8 /* Pods_MiniVote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77B23D46DF0EBEA2F6BDEE /* Pods_MiniVote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E77B23D46DF0EBEA2F6BDEE /* Pods_MiniVote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniVote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C84871AF709733B5C79514D /* Pods-MiniVote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniVote.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote.release.xcconfig"; sourceTree = "<group>"; };
 		6FDBEE511FB6994D00F6C38C /* MiniVote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniVote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDBEE541FB6994D00F6C38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FDBEE561FB6994D00F6C38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,9 +31,13 @@
 		6FDBEE5B1FB6994D00F6C38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FDBEE5E1FB6994D00F6C38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FDBEE601FB6994D00F6C38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FDBEE661FB699A200F6C38C /* ys.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ys.storyboard; sourceTree = "<group>"; };
 		6FDBEE681FB69A0200F6C38C /* ha.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ha.storyboard; sourceTree = "<group>"; };
 		6FDBEE6A1FB69A3000F6C38C /* jungsoo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jungsoo.storyboard; sourceTree = "<group>"; };
+		6FE15DBC1FB69C3F0064FCCB /* ys.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ys.storyboard; sourceTree = "<group>"; };
+		6FE15DBE1FB6A0DA0064FCCB /* VoteResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteResultController.swift; sourceTree = "<group>"; };
+		6FE15DC01FB6A1390064FCCB /* MakeVoteViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeVoteViewContoller.swift; sourceTree = "<group>"; };
+		6FE15DC21FB6A2000064FCCB /* VoteListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteListController.swift; sourceTree = "<group>"; };
+		F68BFD4FADBE4A96B5FD0A60 /* Pods-MiniVote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniVote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86826B64EEBB40020A828D8 /* Pods_MiniVote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B124B12EB1100DBBD9AF7A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E77B23D46DF0EBEA2F6BDEE /* Pods_MiniVote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		496CD4C3AE5EAEA92C94814E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F68BFD4FADBE4A96B5FD0A60 /* Pods-MiniVote.debug.xcconfig */,
+				2C84871AF709733B5C79514D /* Pods-MiniVote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6FDBEE481FB6994C00F6C38C = {
 			isa = PBXGroup;
 			children = (
 				6FDBEE531FB6994D00F6C38C /* MiniVote */,
 				6FDBEE521FB6994D00F6C38C /* Products */,
+				496CD4C3AE5EAEA92C94814E /* Pods */,
+				3B124B12EB1100DBBD9AF7A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,9 +96,12 @@
 				6FDBEE5B1FB6994D00F6C38C /* Assets.xcassets */,
 				6FDBEE5D1FB6994D00F6C38C /* LaunchScreen.storyboard */,
 				6FDBEE601FB6994D00F6C38C /* Info.plist */,
-				6FDBEE661FB699A200F6C38C /* ys.storyboard */,
 				6FDBEE681FB69A0200F6C38C /* ha.storyboard */,
 				6FDBEE6A1FB69A3000F6C38C /* jungsoo.storyboard */,
+				6FE15DBC1FB69C3F0064FCCB /* ys.storyboard */,
+				6FE15DBE1FB6A0DA0064FCCB /* VoteResultController.swift */,
+				6FE15DC01FB6A1390064FCCB /* MakeVoteViewContoller.swift */,
+				6FE15DC21FB6A2000064FCCB /* VoteListController.swift */,
 			);
 			path = MiniVote;
 			sourceTree = "<group>";
@@ -80,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FDBEE631FB6994D00F6C38C /* Build configuration list for PBXNativeTarget "MiniVote" */;
 			buildPhases = (
+				BBBD4C470A4E50B91A55AE5C /* [CP] Check Pods Manifest.lock */,
 				6FDBEE4D1FB6994D00F6C38C /* Sources */,
 				6FDBEE4E1FB6994D00F6C38C /* Frameworks */,
 				6FDBEE4F1FB6994D00F6C38C /* Resources */,
+				00141A453385D35C3BBE969A /* [CP] Embed Pods Frameworks */,
+				8CA90E3FF67047AD925CDBD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,8 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FDBEE5F1FB6994D00F6C38C /* LaunchScreen.storyboard in Resources */,
-				6FDBEE671FB699A200F6C38C /* ys.storyboard in Resources */,
 				6FDBEE6B1FB69A3000F6C38C /* jungsoo.storyboard in Resources */,
+				6FE15DBD1FB69C3F0064FCCB /* ys.storyboard in Resources */,
 				6FDBEE5C1FB6994D00F6C38C /* Assets.xcassets in Resources */,
 				6FDBEE5A1FB6994D00F6C38C /* js.storyboard in Resources */,
 				6FDBEE691FB69A0200F6C38C /* ha.storyboard in Resources */,
@@ -143,13 +179,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00141A453385D35C3BBE969A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CA90E3FF67047AD925CDBD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBBD4C470A4E50B91A55AE5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6FDBEE4D1FB6994D00F6C38C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6FDBEE571FB6994D00F6C38C /* ViewController.swift in Sources */,
+				6FE15DBF1FB6A0DA0064FCCB /* VoteResultController.swift in Sources */,
+				6FE15DC31FB6A2000064FCCB /* VoteListController.swift in Sources */,
 				6FDBEE551FB6994D00F6C38C /* AppDelegate.swift in Sources */,
+				6FE15DC11FB6A1390064FCCB /* MakeVoteViewContoller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +371,7 @@
 		};
 		6FDBEE641FB6994D00F6C38C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68BFD4FADBE4A96B5FD0A60 /* Pods-MiniVote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +386,7 @@
 		};
 		6FDBEE651FB6994D00F6C38C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C84871AF709733B5C79514D /* Pods-MiniVote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
