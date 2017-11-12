@@ -18,6 +18,9 @@
 		6FE15DBF1FB6A0DA0064FCCB /* VoteResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE15DBE1FB6A0DA0064FCCB /* VoteResultController.swift */; };
 		6FE15DC11FB6A1390064FCCB /* MakeVoteViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE15DC01FB6A1390064FCCB /* MakeVoteViewContoller.swift */; };
 		6FE15DC31FB6A2000064FCCB /* VoteListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE15DC21FB6A2000064FCCB /* VoteListController.swift */; };
+		AC7479901FB6ABE200C04BDE /* MainMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74798F1FB6ABE200C04BDE /* MainMasterViewController.swift */; };
+		AC7479921FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7479911FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift */; };
+		AC972BDA1FB6D86900979B4A /* VoteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC972BD91FB6D86900979B4A /* VoteListCell.swift */; };
 		D86826B64EEBB40020A828D8 /* Pods_MiniVote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77B23D46DF0EBEA2F6BDEE /* Pods_MiniVote.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		6FE15DBE1FB6A0DA0064FCCB /* VoteResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteResultController.swift; sourceTree = "<group>"; };
 		6FE15DC01FB6A1390064FCCB /* MakeVoteViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeVoteViewContoller.swift; sourceTree = "<group>"; };
 		6FE15DC21FB6A2000064FCCB /* VoteListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteListController.swift; sourceTree = "<group>"; };
+		AC74798F1FB6ABE200C04BDE /* MainMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterViewController.swift; sourceTree = "<group>"; };
+		AC7479911FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		AC972BD91FB6D86900979B4A /* VoteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteListCell.swift; sourceTree = "<group>"; };
 		F68BFD4FADBE4A96B5FD0A60 /* Pods-MiniVote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniVote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +103,9 @@
 				6FDBEE5D1FB6994D00F6C38C /* LaunchScreen.storyboard */,
 				6FDBEE601FB6994D00F6C38C /* Info.plist */,
 				6FDBEE681FB69A0200F6C38C /* ha.storyboard */,
+				AC7479911FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift */,
+				AC74798F1FB6ABE200C04BDE /* MainMasterViewController.swift */,
+				AC972BD91FB6D86900979B4A /* VoteListCell.swift */,
 				6FDBEE6A1FB69A3000F6C38C /* jungsoo.storyboard */,
 				6FE15DBC1FB69C3F0064FCCB /* ys.storyboard */,
 				6FE15DBE1FB6A0DA0064FCCB /* VoteResultController.swift */,
@@ -186,9 +195,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -216,13 +228,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniVote-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -233,10 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FDBEE571FB6994D00F6C38C /* ViewController.swift in Sources */,
+				AC7479901FB6ABE200C04BDE /* MainMasterViewController.swift in Sources */,
 				6FE15DBF1FB6A0DA0064FCCB /* VoteResultController.swift in Sources */,
+				AC7479921FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift in Sources */,
 				6FE15DC31FB6A2000064FCCB /* VoteListController.swift in Sources */,
 				6FDBEE551FB6994D00F6C38C /* AppDelegate.swift in Sources */,
 				6FE15DC11FB6A1390064FCCB /* MakeVoteViewContoller.swift in Sources */,
+				AC972BDA1FB6D86900979B4A /* VoteListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524TVTU6B9;
 				INFOPLIST_FILE = MiniVote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hys.developer.MiniVote;
@@ -390,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524TVTU6B9;
 				INFOPLIST_FILE = MiniVote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hys.developer.MiniVote;
