@@ -16,6 +16,7 @@ class MakeVoteMdoel{
         self.json = ["Body" :[
                         "Title"  : title,
                         "Choices": choices ] ]
+        
     }
 }
 
