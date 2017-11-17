@@ -83,5 +83,40 @@ class MakeController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         countVote = countVote + 1
         makeVoteTable.reloadData()
     }
-
+    
+    func requestForLogin(Url:String,titleStr: String, choices: Array<String>, completion: @escaping (_ Dic: NSDictionary?,_ status:NSInteger) -> Void) {
+        var dic=NSDictionary()
+        
+        
+        let params: Parameters = [
+            "Body" :[
+                "Title"  : titleStr,
+                "Choices": choices ]
+        ]
+        
+        Alamofire.request(Url, method: .post, parameters: params, encoding: URLEncoding.httpBody)
+            .responseJSON { response in
+                
+                switch response.result {
+                case .success:
+                    print("Validation Successful")
+                    dic=(response.result.value) as! NSDictionary
+                    
+                    var error = NSInteger()
+                    error=dic.object(forKey: "error") as! NSInteger
+                    completion(dic,error)
+                    
+                case .failure(let error):
+                    print(error)
+                    
+                    completion(dic,0)
+                    
+                }
+                
+                
+        }
+    }
 }
+
+
+
