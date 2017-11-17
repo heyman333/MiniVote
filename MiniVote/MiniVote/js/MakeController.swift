@@ -29,8 +29,13 @@ class MakeController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = makeVoteTable.dequeueReusableCell(withIdentifier: "VoteCell", for: indexPath) as! MakeCustomCell
        
-        for _ in indexPath {
-            self.indexPath.append(indexPath)
+        if cell.itemInput.text != nil && cell.itemInput.text != "" {
+            
+            //if 
+            
+            print(indexPath.row)
+            print(cell.itemInput.text!)
+            choices.append(cell.itemInput.text!)
         }
         
         
@@ -50,13 +55,6 @@ class MakeController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 
         initSetting()
     
-        
-        
-//         titleJson = "오늘 뭐 먹지?"
-//         choices = ["돈까스","치킨","피자"]
-//        let parameter = MakeVoteMdoel(title: titleJson, choices: choices)
-//
-//        print(parameter.json)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

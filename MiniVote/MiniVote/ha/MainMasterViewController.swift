@@ -10,6 +10,8 @@ import UIKit
 
 class MainMasterViewController: UITableViewController {
 
+    var temp_List = [MainVoteMdoel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +22,19 @@ class MainMasterViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        tableView.register(VoteListCell.self, forCellReuseIdentifier: "cellID")
+        //tableView.register(VoteListCell.self, forCellReuseIdentifier: "cellID")
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+        let temp_1 = MainVoteMdoel(titleStr: "오늘 점심메뉴", subtitleStr: "5명참여 미참여", regidateLabel: "2017년 11월 13일 월요일 오전 11:30마감")
+        let temp_2 = MainVoteMdoel(titleStr: "오늘 점심메뉴", subtitleStr: "5명참여 미참여", regidateLabel: "2017년 11월 13일 월요일 오전 11:30마감")
+        let temp_3 = MainVoteMdoel(titleStr: "오늘 점심메뉴", subtitleStr: "5명참여 미참여", regidateLabel: "2017년 11월 13일 월요일 오전 11:30마감")
+        
+        temp_List.append(temp_1)
+        temp_List.append(temp_2)
+        temp_List.append(temp_3)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,15 +54,18 @@ class MainMasterViewController: UITableViewController {
     /// 각 섹션마다 셀의 개수
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return temp_List.count
     }
 
     /// 각 셀마다 어떻게 표시될지
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as! VoteListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as! MainCellViewControllerTableViewCell
 
-        //cell.titleLabel.text = "efefef"
-        print("make table view")
+        cell.titleLabel.text! = temp_List[indexPath.row].titleStr
+        cell.subTitleLabel.text! = temp_List[indexPath.row].subtileStr
+        cell.regidateLabel.text! = temp_List[indexPath.row].regidateLabel
+        
+        
         return cell
     }
     

@@ -10,6 +10,11 @@ import UIKit
 
 class MainCellViewControllerTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
+    @IBOutlet weak var regidateLabel: UILabel!
+    
+    @IBOutlet weak var Qimge: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

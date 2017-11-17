@@ -14,15 +14,11 @@ class MakeCustomCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var itemInput: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         itemInput.delegate = self
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
