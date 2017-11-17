@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6FDBEE551FB6994D00F6C38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBEE541FB6994D00F6C38C /* AppDelegate.swift */; };
 		6FDBEE571FB6994D00F6C38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBEE561FB6994D00F6C38C /* ViewController.swift */; };
-		6FDBEE5A1FB6994D00F6C38C /* js.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE581FB6994D00F6C38C /* js.storyboard */; };
 		6FDBEE5C1FB6994D00F6C38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE5B1FB6994D00F6C38C /* Assets.xcassets */; };
 		6FDBEE5F1FB6994D00F6C38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE5D1FB6994D00F6C38C /* LaunchScreen.storyboard */; };
 		6FDBEE691FB69A0200F6C38C /* ha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FDBEE681FB69A0200F6C38C /* ha.storyboard */; };
@@ -22,6 +21,10 @@
 		AC7479921FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7479911FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift */; };
 		AC972BDA1FB6D86900979B4A /* VoteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC972BD91FB6D86900979B4A /* VoteListCell.swift */; };
 		D86826B64EEBB40020A828D8 /* Pods_MiniVote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77B23D46DF0EBEA2F6BDEE /* Pods_MiniVote.framework */; };
+		F975FA0D1FBC571400F7EC41 /* MakeCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975FA0C1FBC571400F7EC41 /* MakeCustomCell.swift */; };
+		F97C91791FBDA8AB00E1ACFE /* MakeVoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97C91781FBDA8AB00E1ACFE /* MakeVoteModel.swift */; };
+		F9BB15161FBAFDF5007064DE /* js.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB15151FBAFDF5007064DE /* js.storyboard */; };
+		F9BB15181FBAFE02007064DE /* MakeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB15171FBAFE02007064DE /* MakeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +33,6 @@
 		6FDBEE511FB6994D00F6C38C /* MiniVote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniVote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDBEE541FB6994D00F6C38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FDBEE561FB6994D00F6C38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6FDBEE591FB6994D00F6C38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/js.storyboard; sourceTree = "<group>"; };
 		6FDBEE5B1FB6994D00F6C38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FDBEE5E1FB6994D00F6C38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FDBEE601FB6994D00F6C38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +46,10 @@
 		AC7479911FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		AC972BD91FB6D86900979B4A /* VoteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteListCell.swift; sourceTree = "<group>"; };
 		F68BFD4FADBE4A96B5FD0A60 /* Pods-MiniVote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniVote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote.debug.xcconfig"; sourceTree = "<group>"; };
+		F975FA0C1FBC571400F7EC41 /* MakeCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCustomCell.swift; sourceTree = "<group>"; };
+		F97C91781FBDA8AB00E1ACFE /* MakeVoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeVoteModel.swift; sourceTree = "<group>"; };
+		F9BB15151FBAFDF5007064DE /* js.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = js.storyboard; sourceTree = "<group>"; };
+		F9BB15171FBAFE02007064DE /* MakeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +102,9 @@
 		6FDBEE531FB6994D00F6C38C /* MiniVote */ = {
 			isa = PBXGroup;
 			children = (
+				F975FA0B1FBC56D500F7EC41 /* js */,
 				6FDBEE541FB6994D00F6C38C /* AppDelegate.swift */,
 				6FDBEE561FB6994D00F6C38C /* ViewController.swift */,
-				6FDBEE581FB6994D00F6C38C /* js.storyboard */,
 				6FDBEE5B1FB6994D00F6C38C /* Assets.xcassets */,
 				6FDBEE5D1FB6994D00F6C38C /* LaunchScreen.storyboard */,
 				6FDBEE601FB6994D00F6C38C /* Info.plist */,
@@ -113,6 +119,17 @@
 				6FE15DC21FB6A2000064FCCB /* VoteListController.swift */,
 			);
 			path = MiniVote;
+			sourceTree = "<group>";
+		};
+		F975FA0B1FBC56D500F7EC41 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB15171FBAFE02007064DE /* MakeController.swift */,
+				F975FA0C1FBC571400F7EC41 /* MakeCustomCell.swift */,
+				F97C91781FBDA8AB00E1ACFE /* MakeVoteModel.swift */,
+				F9BB15151FBAFDF5007064DE /* js.storyboard */,
+			);
+			path = js;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,10 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FDBEE5F1FB6994D00F6C38C /* LaunchScreen.storyboard in Resources */,
+				F9BB15161FBAFDF5007064DE /* js.storyboard in Resources */,
 				6FDBEE6B1FB69A3000F6C38C /* jungsoo.storyboard in Resources */,
 				6FE15DBD1FB69C3F0064FCCB /* ys.storyboard in Resources */,
 				6FDBEE5C1FB6994D00F6C38C /* Assets.xcassets in Resources */,
-				6FDBEE5A1FB6994D00F6C38C /* js.storyboard in Resources */,
 				6FDBEE691FB69A0200F6C38C /* ha.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,10 +214,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -248,10 +267,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FDBEE571FB6994D00F6C38C /* ViewController.swift in Sources */,
+				F9BB15181FBAFE02007064DE /* MakeController.swift in Sources */,
+				F97C91791FBDA8AB00E1ACFE /* MakeVoteModel.swift in Sources */,
 				AC7479901FB6ABE200C04BDE /* MainMasterViewController.swift in Sources */,
 				6FE15DBF1FB6A0DA0064FCCB /* VoteResultController.swift in Sources */,
 				AC7479921FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift in Sources */,
 				6FE15DC31FB6A2000064FCCB /* VoteListController.swift in Sources */,
+				F975FA0D1FBC571400F7EC41 /* MakeCustomCell.swift in Sources */,
 				6FDBEE551FB6994D00F6C38C /* AppDelegate.swift in Sources */,
 				6FE15DC11FB6A1390064FCCB /* MakeVoteViewContoller.swift in Sources */,
 				AC972BDA1FB6D86900979B4A /* VoteListCell.swift in Sources */,
@@ -261,14 +283,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6FDBEE581FB6994D00F6C38C /* js.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FDBEE591FB6994D00F6C38C /* Base */,
-			);
-			name = js.storyboard;
-			sourceTree = "<group>";
-		};
 		6FDBEE5D1FB6994D00F6C38C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
