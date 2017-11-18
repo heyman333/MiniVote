@@ -18,6 +18,7 @@
 		6FE15DC31FB6A2000064FCCB /* VoteListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE15DC21FB6A2000064FCCB /* VoteListController.swift */; };
 		AC7479901FB6ABE200C04BDE /* MainMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74798F1FB6ABE200C04BDE /* MainMasterViewController.swift */; };
 		AC7479921FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7479911FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift */; };
+		AC8519B61FBFB4BF00995051 /* launchImg.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8519B51FBFB4BF00995051 /* launchImg.png */; };
 		AC972BDA1FB6D86900979B4A /* VoteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC972BD91FB6D86900979B4A /* VoteListCell.swift */; };
 		D86826B64EEBB40020A828D8 /* Pods_MiniVote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77B23D46DF0EBEA2F6BDEE /* Pods_MiniVote.framework */; };
 		F91146141FBF356F00EB1D7B /* MainVoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91146131FBF356F00EB1D7B /* MainVoteModel.swift */; };
@@ -43,6 +44,7 @@
 		6FE15DC21FB6A2000064FCCB /* VoteListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteListController.swift; sourceTree = "<group>"; };
 		AC74798F1FB6ABE200C04BDE /* MainMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterViewController.swift; sourceTree = "<group>"; };
 		AC7479911FB6AC4300C04BDE /* MainCellViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		AC8519B51FBFB4BF00995051 /* launchImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImg.png; sourceTree = "<group>"; };
 		AC972BD91FB6D86900979B4A /* VoteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteListCell.swift; sourceTree = "<group>"; };
 		F68BFD4FADBE4A96B5FD0A60 /* Pods-MiniVote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniVote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniVote/Pods-MiniVote.debug.xcconfig"; sourceTree = "<group>"; };
 		F91146131FBF356F00EB1D7B /* MainVoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVoteModel.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				6FDBEE541FB6994D00F6C38C /* AppDelegate.swift */,
 				6FDBEE561FB6994D00F6C38C /* ViewController.swift */,
 				6FDBEE5B1FB6994D00F6C38C /* Assets.xcassets */,
+				AC8519B51FBFB4BF00995051 /* launchImg.png */,
 				6FDBEE5D1FB6994D00F6C38C /* LaunchScreen.storyboard */,
 				6FDBEE601FB6994D00F6C38C /* Info.plist */,
 				AC972BD91FB6D86900979B4A /* VoteListCell.swift */,
@@ -204,6 +207,7 @@
 			files = (
 				6FDBEE5F1FB6994D00F6C38C /* LaunchScreen.storyboard in Resources */,
 				F9BB15161FBAFDF5007064DE /* js.storyboard in Resources */,
+				AC8519B61FBFB4BF00995051 /* launchImg.png in Resources */,
 				6FDBEE6B1FB69A3000F6C38C /* jungsoo.storyboard in Resources */,
 				6FE15DBD1FB69C3F0064FCCB /* ys.storyboard in Resources */,
 				6FDBEE5C1FB6994D00F6C38C /* Assets.xcassets in Resources */,

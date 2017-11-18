@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Make Controller-->
+        <!--새 투표 만들기-->
         <scene sceneID="Yyp-54-2sS">
             <objects>
-                <viewController id="u8N-Vs-bIq" customClass="MakeController" customModule="MiniVote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="새 투표 만들기" id="u8N-Vs-bIq" customClass="MakeController" customModule="MiniVote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cMJ-Re-ken">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +114,7 @@
             </objects>
             <point key="canvasLocation" x="-293" y="81"/>
         </scene>
-        <!--Root View Controller-->
+        <!--투표항목-->
         <scene sceneID="ajU-Rj-SiC">
             <objects>
                 <tableViewController id="92r-rJ-1Xx" customClass="MainMasterViewController" customModule="MiniVote" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,7 +204,7 @@
                             <outlet property="delegate" destination="92r-rJ-1Xx" id="vMI-S4-gfl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="AJ8-ft-3Sy"/>
+                    <navigationItem key="navigationItem" title="투표항목" id="AJ8-ft-3Sy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nU-rY-OtN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
